@@ -10,7 +10,6 @@ table{
 }
 img {
     display: block;
-
     width:  100px;
     transition: -webkit-transform 0.25s ease;
     transition: transform 0.25s ease;
