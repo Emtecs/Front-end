@@ -1,0 +1,33 @@
+#table{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    border: 15px solid #110f0e;
+    outline: 16px solid #2c28ff;
+    position:fixed;
+    margin-left:-150px;
+    margin-top: 15px;
+    left:50%;
+}
+td{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+#text{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 15px solid #110f0e;
+    outline: 16px solid #2c28ff;
+    padding: 60px 55px;
+    position:fixed;
+    margin-left:-120px;
+    margin-top: 400px;
+    left:50%;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
