@@ -1,0 +1,45 @@
+th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    width: 20%;
+
+}
+table{
+    width: 66%;
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+td img {
+    display: block;
+    width:  100px;
+    transition: -webkit-transform 0.25s ease;
+    transition: transform 0.25s ease;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+img:active {
+    -webkit-transform: scale(3);
+    transform: scale(3);
+}
+
+p {
+    text-align: left;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: green;
+}
