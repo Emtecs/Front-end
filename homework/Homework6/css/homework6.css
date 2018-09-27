@@ -73,6 +73,10 @@ footer {
     width: 100%;
     padding: 20px;
     margin-bottom: 62px;
+    letter-spacing: 5px;
+}
+footer a:hover {
+    color:green;
 }
 .bg-img {
     background: url("../images/wedding_couple.jpg") center;
@@ -123,6 +127,7 @@ font-weight: lighter;
 .left {
     float: left;
     padding: 10px 40px;
+    text-align: justify;
 }
 .button {
     background-color: #000000;
@@ -146,8 +151,6 @@ font-weight: lighter;
     text-decoration: none;
     font-size: 26px;
     border-radius: 5px;
-    margin: 50px auto 50px auto;
-    display: block;
     letter-spacing: 4px;
 }
 .button2:hover {
@@ -191,4 +194,5 @@ font-weight: lighter;
 }
 #button1 {
     text-align: center;
+    padding: 40px 0;
 }
