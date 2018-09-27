@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body, h1, h2 {
+    font-family: "Raleway", sans-serif;
+}
+h1  {
+    letter-spacing: 4px;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+h2 {
+    display: block;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 200;
+    font-size: 35px;
+}
+b {
+    font-weight: bold;
+}
+ul {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 8px 16px;
+    z-index: 999;
+}
+li {
+    float: left;
+    width: 25%;
+}
+li a {
+    display: block;
+    color: #110f0e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul:hover {
+    background-color: #fbfff4;
+}
+li a:hover {
+    background-color: #bac1b8;
+}
+img {
+    width:100%;
+    display: block;
+    padding: 40px;
+    align-content: center;
+    filter: grayscale(80%);
+}
+p {
+    line-height: 2;
+    font-size: 15px;
+}
+footer {
+    background-color: black;
+    color:white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 62px;
+}
+.bg-img {
+    background: url("../images/wedding_couple.jpg") center;
+    min-height:100%;
+    position:relative;
+    background-size: cover;
+    filter: grayscale(50%);
+}
+.bg-img1 {
+    background: url("../images/flowers.jpg") center;
+    min-height:100%;
+    position:relative;
+    background-size: cover;
+    filter: grayscale(50%);
+}
+.bg-img1 h1 {
+font-weight: lighter;
+    line-height: 3;
+}
+.text-center-div {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.hover_black a:hover {
+    background-color: black;
+    color:white;
+}
+.middle {
+    background-color: pink;
+    padding: 20px 50px;
+    width: 100%;
+    margin: auto;
+    filter: grayscale(50%);
+}
+.middle a {
+    text-decoration: none;
+}
+.middle h2 {
+    color: gray;
+    padding: 70px 15px 15px 15px;
+}
+.middle2 {
+    width: 1280px;
+    margin: auto;
+}
+.clear {
+    clear: both;
+}
+.left {
+    float: left;
+    padding: 10px 40px;
+}
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 25px 35px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #bac1b8;
+    color: white;
+}
+.button2 {
+    background-color: #ff0f00; opacity: 0.5;
+    border: none;
+    color: white;
+    padding: 25px 85px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    border-radius: 5px;
+    margin: 50px auto 50px auto;
+    display: block;
+    letter-spacing: 4px;
+}
+.button2:hover {
+    background-color: #96b5ff;
+    color: #000000;
+}
+.when-where {
+    float: left;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+.when-where h2 {
+    color:black;
+    text-align: center;
+}
+.when-where p {
+    line-height: 3;
+    padding-bottom: 60px;
+}
+.bg-color {
+    background: pink;
+    min-height:50%;
+    position:relative;
+    background-size: cover;
+}
+.bg-color h1 {
+    font-weight: lighter;
+    line-height: 2;
+    font-size: 35px;
+    color: black;
+}
+.bg-color h2 {
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+}
+#button {
+     text-align: center;
+     padding: 35px;
+}
+#button1 {
+    text-align: center;
+}
