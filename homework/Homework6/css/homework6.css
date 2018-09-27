@@ -104,11 +104,10 @@ font-weight: lighter;
     color:white;
 }
 .middle {
-    background-color: pink;
+    background-color: #f2e1e1;
     padding: 20px 50px;
     width: 100%;
     margin: auto;
-    filter: grayscale(50%);
 }
 .middle a {
     text-decoration: none;
@@ -172,7 +171,7 @@ font-weight: lighter;
     padding-bottom: 60px;
 }
 .bg-color {
-    background: pink;
+    background: #ffdddd;
     min-height:50%;
     position:relative;
     background-size: cover;
