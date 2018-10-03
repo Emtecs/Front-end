@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 10</title>
+    <link rel="stylesheet" type="text/css" href="css/homework10.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form1" name="registrationForm">
+            <div class="form_left">
+                Title<br>
+                Name<br>
+                Phone number<br>
+                Email address<br>
+                Your website<br>
+                Nr. of items to order<br>
+                Length<br>
+                Delivery date<br>
+                Time of delivery<br>
+                Color of the item<br>
+            </div>
+            <div class="form_right">
+                <input list="title" placeholder="Choose or write your own" required><br>
+                <datalist id="title">
+                    <option value="Title 1">
+                    <option value="Title 2">
+                    <option value="Title 3">
+                    <option value="Title 4">
+                    <option value="Title 5">
+                </datalist>
+                <input type="text" name="fullname" placeholder="John Doe" required><br>
+                <input  type="tel" name="tel" placeholder="+1 23456789"> (optional)<br>
+                <input type="email" name="email" placeholder="Your email address" required><br>
+                <input type="url" name="website" placeholder="www.mywebsite.com"> (optional)<br>
+                <input id="number" type="number" name="quantity" min="1" max="10" required> (1 - 10)<br>
+                <input type="range" id="slider"  min="10" max="500" step="10" required oninput="sliderChange(this.value)">
+                <output id="output">0.1</output> m (in 10 cm increments)<br>
+                <input id="date" type="date" name="deliday" min="2010-12-16" required> (minimum 16 December 2010)<br>
+                <input id="time" type="time" step="1800" required> (in 30 min increments)<br>
+                <input id="color" type="color" name="color" value="#ff0000" required> (default red)<br>
+            </div>
+            <div class="clear"></div>
+        </form>
+        <button type="submit" form="form1" id="submit_button">Submit</button>
+    </div>
+    <form class="container" id="search_form">
+        Search <input type="search" name="search"> <button type="submit">Go</button>
+    </form>
+    <script src="javascript/homework10.js"></script>
+</body>
+</html>
