@@ -34,8 +34,10 @@
                 <input type="email" name="email" placeholder="Your email address" required><br>
                 <input type="url" name="website" placeholder="www.mywebsite.com"> (optional)<br>
                 <input id="number" type="number" name="quantity" min="1" max="10" required> (1 - 10)<br>
+
                 <input type="range" id="slider"  min="10" max="500" step="10" required oninput="sliderChange(this.value)">
                 <output id="output">0.1</output> m (in 10 cm increments)<br>
+
                 <input id="date" type="date" name="deliday" min="2010-12-16" required> (minimum 16 December 2010)<br>
                 <input id="time" type="time" step="1800" required> (in 30 min increments)<br>
                 <input id="color" type="color" name="color" value="#ff0000" required> (default red)<br>

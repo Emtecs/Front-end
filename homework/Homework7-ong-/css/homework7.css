@@ -6,6 +6,14 @@
 body {
     background-color: black;
     font-family: Georgia, serif;
+    text-decoration: none;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    color:inherit;
+}
+.clear {
+    clear: both;
 }
 header {
     height: 80px;
@@ -62,6 +70,12 @@ header {
 }
 #top_menu_right:hover {
     cursor: pointer;
+}
+#top_menu_left li:hover {
+    color:white;
+}
+nav li:hover {
+
 }
 .right-border {
     border-right: 1px gray solid;
@@ -142,6 +156,9 @@ h1 {
     font-size: 36px;
     font-weight: lighter;
 }
+p {
+    color:gray;
+}
 #after_header p {
     font-size: 12px;
     color: gray;
@@ -157,6 +174,7 @@ h1 {
     background-color: rgb(241, 241, 241);
     padding: 5px;
     font-size: 12px;
+    border: none;
 }
 #after_header button {
     background-color: rgb(0, 153, 255);
@@ -167,6 +185,7 @@ h1 {
     margin-left:5px;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 #after_header h1 {
     width: 30%;
@@ -180,4 +199,162 @@ h1 {
     width: 100%;
     height: 460px;
     background-color: rgb(241, 241, 241);
+    padding-bottom: 10px;
+}
+#bottom_white {
+    background-color: white;
+    height: 660px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+#bottom_white2 {
+    background-color: white;
+    height: 160px;
+    padding-bottom: 40px;
+}
+footer {
+    background-color: rgb(26, 26, 26);
+    height: 450px;
+}
+#copyright {
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    height: 60px;
+    padding: 20px;
+    color: gray;
+    display: inline-block;
+}
+#p_left {
+    float: left;
+    width: 50%;
+}
+#p_right {
+    float: left;
+    text-align: right;
+    width: 50%;
+}
+#gray_middle_left {
+    width: 390px;
+    float: left;
+    font-size: 16px;
+    padding-right: 20px;
+}
+#gray_middle_left h1 {
+    padding-bottom: 20px;
+    margin-top:150px;
+}
+#gray_middle_left p{
+    line-height: 1.5;
+}
+#gray_middle_right {
+    width: 550px;
+    height: 440px;
+    background-color: rgb(51, 51, 51);
+    float: right;
+    margin-top:10px;
+    position: relative;
+}
+#read_more {
+    margin: 25px 0;
+    background-color: rgb(0, 153, 255);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+#pic_selector li {
+    float: left;
+    list-style-type: none;
+    margin: 0 3px;
+}
+#pic_selector button {
+    width: 15px;
+    height: 15px;
+    border: 3px solid black;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#pic_selector button:focus {
+    background: none;
+}
+#pic_selector ul {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+#five_floats {
+    width: 100%;
+    padding-bottom: 40px;
+}
+#five_floats img {
+    max-height: 100%;
+}
+#five_floats_left {
+    width: 470px;
+    height: 425px;
+    float: left;
+}
+.five_floats_right {
+    float:left;
+    width: 25%;
+    padding: 0 20px;
+}
+#five_floats_right_top_left {padding: 0 0 20px 20px;}
+#five_floats_right_top_right {padding: 0 0 20px 20px;}
+#five_floats_right_bottom_left {padding: 0 0 30px 20px;}
+#five_floats_right_bottom_right {padding: 0 0 30px 20px;}
+.img-box {
+    width: 85px;
+    height: 80px;
+    background-color: rgb(51, 51, 51);
+    margin:auto;
+}
+.five_floats_right p.author {
+    font-size: 16px;
+    color: rgb(0, 153, 255);
+    padding: 5px 15px;
+}
+.five_floats_right p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.8;
+}
+#bottom_lorem {
+    background-color: rgb(244, 244 ,244);
+    border-left: 10px solid rgb(0, 153, 255);
+    height: 120px;
+    width: 100%;
+}
+#bottom_lorem p {
+    color: black;
+}
+#bottom_lorem h1 {
+    line-height: 1.5;
+}
+#bottom_lorem_text {
+    float: left;
+    width: 60%;
+    margin: 20px 0 25px 25px;
+}
+#bottom_lorem_button {
+    width: 33%;
+    float: left;
+    margin: 35px 20px;
+}
+#bottom_lorem button {
+    font-size: 26px;
+    background-color: rgb(0, 153, 255);
+    border: none;
+    border-radius: 5px;
+    color: rgb(244, 244 ,244);
+    text-shadow: 0 -1px 0 gray;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#bottom_lorem button:hover {
+    cursor: pointer;
 }
