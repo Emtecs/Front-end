@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+.clear {
+  clear: both; }
+
+.clear_right {
+  clear: right; }
+
+.text_align_right {
+  float: right; }
+
+body, html {
+  height: 100%;
+  font-size: 15px;
+  line-height: 1.5; }
+
+body, h1, h2, h3, h4, h5, h6, button {
+  font-family: "Amatic SC", sans-serif; }
+
+.main_container {
+  width: 320px;
+  height: 100%; }
+
+.text-center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.main_h1 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-bottom: 64px;
+  font-weight: lighter; }
+
+header {
+  background-size: cover;
+  background: url(https://www.w3schools.com/w3images/pizza.jpg) no-repeat;
+  position: relative;
+  min-height: 90%;
+  filter: grayscale(50%); }
+  header div {
+    display: block;
+    text-align: center;
+    width: 65%; }
+  header h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center; }
+  header p {
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 20px; }
+  header button {
+    font-size: 36px;
+    color: white;
+    background: black;
+    border: 1px solid #55a5ff;
+    padding: 15px;
+    font-weight: lighter; }
+
+section {
+  padding: 60px 15px;
+  background-color: black; }
+  section button {
+    float: left;
+    width: 33.33%;
+    padding: 12px;
+    font-size: 36px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: default;
+    border: none; }
+  section button:hover, section :active {
+    background-color: red; }
+
+.menu {
+  border: 1px solid gray; }
+
+.menu_content {
+  background-color: white;
+  padding: 32px 16px; }
+  .menu_content h1 {
+    color: black;
+    font-size: 36px;
+    text-align: left; }
+  .menu_content p {
+    font-size: 36px;
+    color: gray; }
+  .menu_content hr {
+    color: #eee;
+    margin: 20px 0;
+    opacity: 0.2; }
+
+.container_about {
+  padding: 60px 15px;
+  background-color: #f44336;
+  filter: grayscale(70%); }
+  .container_about P {
+    color: white;
+    font-size: 24px;
+    padding: 15px 0; }
+  .container_about div h1 {
+    font-size: 36px;
+    color: white;
+    margin: 10px 0; }
+
+.img_chef {
+  vertical-align: middle;
+  border-radius: 50%;
+  float: right;
+  width: 150px; }
+
+.img_restaurant {
+  width: 100%;
+  margin: 16px 0; }
+
+.hours_float_left {
+  width: 50%;
+  float: left; }
+
+.hours_float_right {
+  width: 50%;
+  float: right; }
+
+.container_contact {
+  padding: 60px 15px;
+  background-color: #607d8b; }
