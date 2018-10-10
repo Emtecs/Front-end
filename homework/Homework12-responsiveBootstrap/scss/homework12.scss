@@ -1,0 +1,23 @@
+h1, p {
+  color:gray;
+}
+.container-fluid {
+  background-color: #323232;
+  h1 {
+    margin-bottom: 0;
+  }
+  p {
+    font-weight: bolder;
+  }
+  a {
+    text-transform: uppercase;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+  }
+}
+
+#html5 {
+  vertical-align: -5px;
+}

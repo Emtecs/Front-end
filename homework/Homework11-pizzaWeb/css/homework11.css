@@ -37,8 +37,8 @@ body, h1, h2, h3, h4, h5, h6, button, input {
   color: white;
   text-align: center;
   margin-bottom: 64px;
-  font-weight: lighter; }
-
+  font-weight: lighter;
+}
 header {
   background-size: cover;
   background: url(https://www.w3schools.com/w3images/pizza.jpg) no-repeat;
