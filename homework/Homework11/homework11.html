@@ -2,53 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 11</title>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/homework11.css">
 </head>
 <body>
     <div class="main_container">
         <header>
             <div class="text-center-div">
-                <h1>Thin<br> Crust Pizza</h1>
-                <button>Let Me See The Menu</button>
+                <h1>Thin Crust Pizza</h1>
+               <a href="#the_menu"><button>Let Me See The Menu</button></a>
             </div>
             <p>Open from 10am to 12pm</p>
         </header>
         <section>
             <div>
-                <h1 class="main_h1">The Menu</h1>
+                <h1 class="main_h1" id="the_menu">The Menu</h1>
             </div>
             <div class="menu">
-                <a>
-                    <button>Pizza</button>
+                <a id="pizza" >
+                    <button class="active">Pizza</button>
                 </a>
-                <a>
+                <a id="salads">
                     <button>Salads</button>
                 </a>
-                <a>
+                <a id="starter">
                     <button>Starter</button>
                 </a>
                 <div class="clear"></div>
             </div>
             <div class="menu_content">
                 <!--Start Pizza-->
+                <div id="menu_pizza">
+                    <div>
+                        <h1>
+                            <b>Margherita</b>
+                            <span class="text_align_right menu_money_tag">$12.50</span>
+                        </h1>
+                        <p>Fresh Tomatoes, Fresh Mozzarella, Fresh Basil</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Formaggio</b>
+                            <span class="text_align_right menu_money_tag">$15.50</span>
+                        </h1>
+                        <p>Four Cheeses (Mozzarella, Parmesan, Pecorino, Jarlserg)</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Chicken</b>
+                            <span class="text_align_right menu_money_tag">$17.00</span>
+                        </h1>
+                        <p>Fresh Tomatoes, Mozzarella, Chicken, Onions</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Pineapple'O'Clock</b>
+                            <span class="text_align_right menu_money_tag">$16.50</span>
+                        </h1>
+                        <p>Fresh Tomatoes, Mozzarella, FreshPineapple, Bacon, Fresh Basil</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Meat Town</b>
+                            <span class="menu_word_tag menu_word_hot_tag">Hot!</span>
+                            <span class="text_align_right menu_money_tag">$20.00</span>
+                        </h1>
+                        <p>Fresh Tomatoes, Mozzarella, Hot Pepporoni, Hot Sausage, Beef, Chicken</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Parma</b>
+                            <span class="menu_word_tag">New</span>
+                            <span class="text_align_right menu_money_tag">$21.50</span>
+                        </h1>
+                        <p>Fresh Tomatoes, Mozzarella, Parma, Bacon, Fresh Arugula</p>
+                    </div>
+                </div>
                 <!--End Pizza-->
-
                 <!--Start Salads-->
+                <div id="menu_salads" class="menu_salads_none">
+                    <div>
+                        <h1>
+                            <b>Lasagna</b>
+                            <span class="menu_word_tag">Popular</span>
+                            <span class="text_align_right menu_money_tag">$13.50</span>
+                        </h1>
+                        <p>Special Sauce, Mozzarella, Parmesan, Ground Beef</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Ravioli</b>
+                            <span class="text_align_right menu_money_tag">$14.50</span>
+                        </h1>
+                        <p>Ravioli filled with Cheese</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Spaghetti Classica</b>
+                            <span class="text_align_right menu_money_tag">$11.00</span>
+                        </h1>
+                        <p>Fresh Tomatoes, Onions, Ground Beef</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Seafood Pasta</b>
+                            <span class="text_align_right menu_money_tag">$25.50</span>
+                        </h1>
+                        <p>Salmon, Shrimp, Lobster, Garlic</p>
+                    </div>
+                </div>
                 <!--End Salads-->
-
                 <!--Start Starter-->
-                <div>
-                    <h1>
-                        <b>Today's Soup</b>
-                        <span>Seasonal</span>
-                        <span class="text_align_right">$5.50</span>
-                        <div class="clear"></div>
-                    </h1>
-                    <p>Ask The Waiter</p>
-                    <hr>
+                <div id="menu_starter" class="menu_starter_none">
+                    <div>
+                        <h1>
+                            <b>Today's Soup</b>
+                            <span class="menu_word_tag">Seasonal</span>
+                            <span class="text_align_right menu_money_tag">$5.50</span>
+                        </h1>
+                        <p>Ask The Waiter</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Bruschetta</b>
+                            <span class="text_align_right menu_money_tag">$8.50</span>
+                        </h1>
+                        <p>Bread with Pesto Tomatoes, Onion, Garlic</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Garlic Bread</b>
+                            <span class="text_align_right menu_money_tag">$9.50</span>
+                        </h1>
+                        <p>Grilled Ciabatta, Garlic, Butter, Onions</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h1>
+                            <b>Tomozzarella</b>
+                            <span class="text_align_right menu_money_tag">$10.50</span>
+                        </h1>
+                        <p>Tomatoes and Mozzarella</p>
+                    </div>
                 </div>
                 <!--End Starter-->
             </div>
@@ -87,7 +194,31 @@
         <div>Google</div>
         <div class="container_contact">
             <h1 class="main_h1">Contact</h1>
+            <p>
+                Find us at some address at some place or call us at 05050515-122330.
+            </p>
+            <p>
+                <span>FYI!</span> We offer full-service catering for any event, large or small.
+                We understand your needs and we will cater the food to satisfy the biggest criteria of them all,
+                both look and taste.
+            </p>
+            <p class="font_large">
+                <strong>Reserve</strong> a table, ask for today's special or just send us a message:
+            </p>
+            <form>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="number" name="how_many" placeholder="For how many people">
+                <input type="datetime-local" name="date&time" value="2018-10-09T08:00">
+                <input type="text" name="message" placeholder="Message / Special requirements" required>
+                <button>Send Message</button>
+            </form>
         </div>
+        <footer>
+            <div >
+                <p class="font_large">Powered by <a href="#">W3.css</a> </p>
+            </div>
+        </footer>
     </div>
+<script src="javascript/menu_script.js"></script>
 </body>
 </html>
