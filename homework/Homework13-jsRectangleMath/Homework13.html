@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 13</title>
+</head>
+<body>
+    <p>Auštis: </p><p id="a"></p>
+    <p>Plotis :</p><p id="b"></p>
+    <p>Perimetras :</p><p id="P"></p>
+    <p>Plotas: </p><p id="S"></p>
+    <p>Įstrižainė: </p><p id="d"></p>
+    <script>
+        var a, b, P, S, d;
+        a = parseFloat(prompt("Įveskite stačiakampio aukštį: ", "0"), 10);
+        b = parseFloat(prompt("Įveskite stačiakampio plotį: ", "0"), 10);
+        P = (2 * (a + b)).toFixed(2);
+        S = (a * b).toFixed(2);
+        z = ((a * a) + (b * b)).toFixed(2);
+        d = Math.sqrt(z).toFixed(2);
+        document.getElementById("a").innerHTML = a;
+        document.getElementById("b").innerHTML = b;
+        document.getElementById("P").innerHTML = P;
+        document.getElementById("S").innerHTML = S;
+        document.getElementById("d").innerHTML = d;
+        console.log("Auštis: " + a, "Plotis: " + b, "Perimetras: " + P, "Plotas: " + S, "Įstrižainė: " + d)
+    </script>
+</body>
+</html>
