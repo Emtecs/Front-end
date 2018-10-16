@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 11</title>
+
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/homework11.css">
 </head>
 <body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#the_menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="clear"></div>
     <div class="main_container col-s-12 col-m-12 col-l-12 col-xl-12">
-        <header class="img-pizza ">
+        <header class="img-pizza" id="home">
                 <div class="text-center-div">
                     <h1>Thin <br> Crust Pizza</h1>
                    <a href="#the_menu"><button>Let Me See The Menu</button></a>
@@ -17,7 +25,7 @@
                 <p>Open from 10am to 12pm</p>
         </header>
         <section>
-            <div class="col-xl-10">
+            <div class="col-xl-6 margin_auto">
                 <div>
                     <h1 class="main_h1" id="the_menu">The Menu</h1>
                 </div>
@@ -163,57 +171,63 @@
             </div>
         </section>
         <div class="container_about">
-            <h1 class="main_h1">About</h1>
-            <p>
-                The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-            </p>
-            <p><b>The Chief?</b> Mr. Italiano himself</p>
-            <div>
-                <img class="img_chef" src="images/chef.jpg">
-            </div>
-            <p>We are proud of our interiors.</p>
-            <div>
-                <img class="img_restaurant" src="images/onepage_restaurant.jpg">
-            </div>
-            <div>
-                <h1>Opening hours</h1>
-               <div class="hours_float_left">
-                   <p>Mon & Tue Closed</p>
-                   <p>Wednesday 10:00 - 24:00</p>
-                   <p>Thursday 10:00 - 24:00</p>
-               </div>
-                <div class="hours_float_right">
-                    <p>Friday 10:00 - 12:00</p>
-                    <p>Saturday 10:00 - 23:00</p>
-                    <p>Sunday Closed</p>
+            <div class="col-xl-6 margin_auto">
+                <h1 class="main_h1" id="about">About</h1>
+                <p>
+                    The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+                    <div>
+                        <img class="img_chef" src="images/chef.jpg">
+                    </div>
+                <p><b>The Chef?</b> Mr. Italiano himself!</p>
+                <p>We are proud of our interiors.</p>
+                <div>
+                    <img class="img_restaurant" src="images/onepage_restaurant.jpg">
                 </div>
-                <div class="clear"></div>
+                <div>
+                    <h1 class="secondary_h1">Opening hours</h1>
+                   <div class="hours_float_left">
+                       <p>Mon & Tue Closed</p>
+                       <p>Wednesday 10:00 - 24:00</p>
+                       <p>Thursday 10:00 - 24:00</p>
+                   </div>
+                    <div class="hours_float_right">
+                        <p>Friday 10:00 - 12:00</p>
+                        <p>Saturday 10:00 - 23:00</p>
+                        <p>Sunday Closed</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
             </div>
         </div>
-        <div>Google</div>
+        <div id="mapid">
+            google map
+        </div>
         <div class="container_contact">
-            <h1 class="main_h1">Contact</h1>
-            <p>
-                Find us at some address at some place or call us at 05050515-122330.
-            </p>
-            <p>
-                <span>FYI!</span> We offer full-service catering for any event, large or small.
-                We understand your needs and we will cater the food to satisfy the biggest criteria of them all,
-                both look and taste.
-            </p>
-            <p class="font_large">
-                <strong>Reserve</strong> a table, ask for today's special or just send us a message:
-            </p>
-            <form>
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="number" name="how_many" placeholder="For how many people">
-                <input type="datetime-local" name="date&time" value="2018-10-09T08:00">
-                <input type="text" name="message" placeholder="Message / Special requirements" required>
-                <button>Send Message</button>
-            </form>
+            <div class="col-xl-6 margin_auto">
+                <h1 class="main_h1" id="contact">Contact</h1>
+                <p>
+                    Find us at some address at some place or call us at 05050515-122330.
+                </p>
+                <p>
+                    <span>FYI!</span> We offer full-service catering for any event, large or small.
+                    We understand your needs and we will cater the food to satisfy the biggest criteria of them all,
+                    both look and taste.
+                </p>
+                <p class="font_large">
+                    <strong>Reserve</strong> a table, ask for today's special or just send us a message:
+                </p>
+                <form>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="number" name="how_many" placeholder="For how many people">
+                    <input type="datetime-local" name="date&time" value="2018-10-09T08:00">
+                    <input type="text" name="message" placeholder="Message / Special requirements" required>
+                    <button>Send Message</button>
+                </form>
+            </div>
         </div>
         <footer>
             <div >
@@ -221,6 +235,7 @@
             </div>
         </footer>
     </div>
+
 <script src="js/menu_script.js"></script>
 </body>
 </html>
