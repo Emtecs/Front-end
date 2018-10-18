@@ -2,8 +2,15 @@
   box-sizing: border-box;
   margin: 0;
 }
+#map { height: 500px; }
 .clear {
   clear: both;
+}
+.active {
+  background-color: red;
+ }
+.active_display_none {
+  display: none;
 }
 .clear_right {
   clear: right;
