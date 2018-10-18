@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 11</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+            integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+            crossorigin=""></script>
+
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
@@ -31,9 +38,9 @@
                     <h1 class="main_h1" id="the_menu">The Menu</h1>
                 </div>
                 <div id="myDIV" class="menu">
-                        <button onclick="myFunction()" id="pizza" class="btn active">Pizza</button>
-                        <button onclick="myFunction()" id="salads" class="btn">Salads</button>
-                        <button onclick="myFunction()" id="starter" class="btn">Starter</button>
+                    <button id="pizza" class="btn active">Pizza</button>
+                    <button id="salads" class="btn">Salads</button>
+                    <button id="starter" class="btn">Starter</button>
                 </div>
                 <div class="clear"></div>
                 <div class="menu_content" id="menu-content">
@@ -198,7 +205,7 @@
                 </div>
             </div>
         </div>
-        <div id='map'></div>
+        <div id='mymap'></div>
         <div class="container_contact" id="contact">
             <div class="col-xl-6 margin_auto">
                 <h1 class="main_h1">Contact</h1>
@@ -228,7 +235,6 @@
             </div>
         </footer>
     </div>
-
 <script src="js/menu_script.js"></script>
 <script src="js/map.js"></script>
 </body>

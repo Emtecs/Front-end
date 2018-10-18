@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array with function(kmPerH) to table</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Laikas</th>
+        <th>Valstybinis nr.</th>
+        <th>Metrai</th>
+        <th>Sekundes</th>
+        <th>Km/h</th>
+    </tr>
+    </thead>
+    <tbody id ="tableTBody">
+    <!--Filled by JS-->
+    </tbody>
+</table>
+    <script>
+        function convertMetersSecondsLastedToKmPerH(meters, secondsLasted) {
+            return (meters / 1000) / (secondsLasted / 60 / 60);
+        }
+        var arr = [
+            ["2017-07-06 19:59:45", "LRS123", 5000, 118],
+            ["2017-07-06 19:59:45", "LRS124", 6000, 119],
+            ["2017-07-06 19:59:45", "LRS125", 7000, 120],
+            ["2017-07-06 19:59:45", "LRS126", 8000, 121],
+        ];
+        for (var i = 0; i < arr.length; i++) {
+            arr[i][arr.length] = convertMetersSecondsLastedToKmPerH(arr[i][2], arr[i][3]);
+        }
+        var tableTbodyHtml = "";
+        for (var k = 0; k < arr.length; k++) {
+            tableTbodyHtml += "<tr>" +
+                "<td>"+arr[k][0]+"</td>" +
+                "<td>"+arr[k][1]+"</td>" +
+                "<td>"+arr[k][2]+"</td>" +
+                "<td>"+arr[k][3]+"</td>" +
+                "<td>"+ parseFloat(arr[k][4]).toFixed(0)+" km/h</td>" +
+                "</tr>";
+        }
+
+        /* patrumpintas variantas
+
+        var tableTbodyHtml = "";
+    for (var i = 0; i < arr.length; i++) {
+        var kmPerH = convertMetersSecondsLastedToKmPerH(arr[i][2], arr[i][3]);
+        tableTbodyHtml += "<tr>" +
+            "<td>"+arr[i][0]+"</td>" +
+            "<td>"+arr[i][1]+"</td>" +
+            "<td>"+arr[i][2]+"</td>" +
+            "<td>"+arr[i][3]+"</td>" +
+            "<td>"+healthyNumber(kmPerH)+" km/h</td>" +
+            "</tr>";
+    }
+             */
+        document.getElementById("tableTBody").innerHTML = tableTbodyHtml;
+    </script>
+</body>
+</html>

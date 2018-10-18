@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--SCRIPTS-->
+<form id="kazkas" onsubmit="myFormSubmit(); return false;">
+    <input type="datetime-local" name="datetime">
+    <input type="text" name="plateNr">
+    <input type="number" name="distance">
+    <input type="number" name="duration">
+    <button type="submit">Submit</button>
+</form>
+
+<table>
+    <thead>
+    <tr>
+        <th>Data</th>
+        <th>Valst. nr.</th>
+        <th>Atstumas</th>
+        <th>Trukme</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--FILLED WITH JS-->
+    </tbody>
+</table>
+
+<script>
+    // get data
+    function myFormSubmit() {
+        var dateTime = document.querySelector('#kazkas input[name="datetime"]');
+        var plateNr = document.querySelector('#kazkas input[name="plateNr"]');
+        var distance = document.querySelector('#kazkas input[name="distance"]');
+        var duration = document.querySelector('#kazkas input[name="duration"]');
+
+        var tableElm = document.querySelector('table tbody');
+        tableElm.innerHTML += '<tr>' +
+            '<td>'+dateTime.value+'</td>' +
+            '<td>'+plateNr.value+'</td>' +
+            '<td>'+distance.value+'</td>' +
+            '<td>'+duration.value+'</td>' +
+            '</tr>';
+    //clean up
+        dateTime.value = "";
+        plateNr.value = "";
+        distance.value = "";
+        duration.value = "";
+    }
+</script>
+
+</body>
+</html>
