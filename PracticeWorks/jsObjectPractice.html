@@ -1,0 +1,124 @@
+<!--
+PRATIMAS
+
+var figuros = [
+{ilgis: 2, plotis: 5, aukstis: 3},
+{ilgis: 3, plotis: 2, aukstis: 6},
+{ilgis: 1, plotis: 5, aukstis: 5}
+];
+
+HTML puslapyje turi būti du mygtukai su pavadinimais: "Pradiniai duomenys" ir "Rasti max”
+
+Paspaudus mygtuką "Pradiniai duomenys" atspausdinkite visas figūras lentelėje (naudokite
+<table>)
+
+    Paspaudus mygtuką "Rasti max" suskaičiuokite visų figūrų tūrius ir raskite figūrą kurios tūris
+    didžiausias. Atspausdinkite visas figūras lentelėje su suskaičiuotais tūriais, o figūrą, kurios tūris
+    didžiausias, atspausdinkite kitokia spalva (spausdindami panaudokite css klasę, pvz: <td
+            class=“raudona”>...</td>).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pavadinimas</title>
+
+    <style>
+        .max-turis {
+            background: red;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+<button onclick="primalData()">Pradiniai duomenys</button>
+<button onclick="findMax()">Rasti MAX</button>
+
+<table>
+    <thead>
+    <tr>
+        <th>Ilgis</th>
+        <th>Plotis</th>
+        <th>Aukstis</th>
+        <th>Turis</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--FILLED WITH JS-->
+    </tbody>
+</table>
+
+<script>
+
+    var figuros = [
+        {ilgis: 2, plotis: 5, aukstis: 3},
+        {ilgis: 3, plotis: 2, aukstis: 6},
+        {ilgis: 1, plotis: 5, aukstis: 5}
+    ];
+
+    function primalData() {
+        var tableElm = document.querySelector('table tbody');
+        tableElm.innerHTML = "";
+
+        for (let key in figuros) {
+            if (!figuros.hasOwnProperty(key)) {
+                continue;
+            }
+            var obj = figuros[key];
+            tableElm.innerHTML += `
+            <tr>
+                <td>${obj.ilgis}</td>
+                <td>${obj.plotis}</td>
+                <td>${obj.aukstis}</td>
+                <td>-</td>
+            </tr>
+            `;
+        }
+    }
+
+    function findMax() {
+        let tableElm = document.querySelector('table tbody');
+        tableElm.innerHTML = "";
+
+        let maxTuris = -9999999;
+        for (let key in figuros) {
+            if (!figuros.hasOwnProperty(key)) {
+                continue;
+            }
+            let obj = figuros[key];
+            obj.turis = obj.ilgis * obj.plotis * obj.aukstis;
+
+            if (maxTuris < obj.turis) {
+                maxTuris = obj.turis;
+            }
+        }
+
+        for (let key in figuros) {
+            if (!figuros.hasOwnProperty(key)) {
+                continue;
+            }
+            let obj = figuros[key];
+
+            let elmClass = "";
+            if (maxTuris === obj.turis) {
+                elmClass = 'max-turis';
+            }
+            tableElm.innerHTML += `
+            <tr class="${elmClass}">
+                <td>${obj.ilgis}</td>
+                <td>${obj.plotis}</td>
+                <td>${obj.aukstis}</td>
+                <td>${obj.turis}</td>
+            </tr>
+            `;
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>
