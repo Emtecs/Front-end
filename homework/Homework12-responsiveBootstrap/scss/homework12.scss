@@ -1,6 +1,38 @@
 h1, p {
   color:gray;
 }
+p {
+  line-height: 1.5;
+}
+.row {
+  margin: 0;
+}
+//HEADER ITEMS START
+header {
+  h1 {
+    margin: 0;
+  }
+  p {
+    font-weight: bolder;
+    margin: 0;
+  }
+  a {
+    text-transform: uppercase;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+  }
+  ul {
+    li{
+      margin: 10px 0;
+    }
+  }
+  .row {
+    padding: 20px 0;
+  }
+}
+//HEADER ITEMS END
 a {
   text-decoration: none;
   color: orange;
@@ -24,7 +56,6 @@ ul {
 }
 li {
   border-bottom: 1px dotted black;
-
   a {
     color: black;
     font-weight: lighter;
@@ -32,45 +63,47 @@ li {
     padding: 10px 0;
   }
 }
+.img_center {
+  margin: 30px auto;
+}
 .html5 {
     vertical-align: -3px;
-  }
+}
 .w3c {
     vertical-align: -2px;
-  }
+}
 .container-fluid {
     background-color: #323232;
-  }
+}
 .container {
-  width: 960px;
     padding: 0;
-  }
+}
 .outline {
     outline: 1px solid rgba(128,128,128, 0.4);
     padding: 5px;
-  }
-.top_bot_border {
-    border-top: 1px solid rgba(128,128,128, 0.4);
-    border-bottom: 1px solid rgba(128,128,128, 0.4);
-    padding: 30px 0;
-  }
-.margin_20_0 {
-    margin: 20px 0;
-  }
-header {
-  h1 {
-    margin-bottom: 0;
+}
+.Column32x32 {
+  margin: 10px 0;
+  img {
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
   p {
-    font-weight: bolder;
+    padding-top: 5px;
   }
+}
+.medium_section {
+  border-top: 1px solid rgba(128,128,128, 0.4);
+  border-bottom: 1px solid rgba(128,128,128, 0.4);
+  padding: 30px 0 20px 0;
+  margin-bottom: 20px;
   a {
-    text-transform: uppercase;
-    background-color: black;
-    padding: 10px;
-    text-decoration: none;
-    color: gray;
+    padding-top: 30px;
   }
+  div {
+    margin: 10px 0;
+    }
+
 }
 
 

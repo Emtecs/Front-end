@@ -401,9 +401,15 @@ div.footer_read_me a {
     text-transform: none;
     font-size: 12px;
 }
+div.footer_read_me a:hover {
+    color: white;
+}
 .footer_read_me {
     text-align: right;
     margin-top: 15px;
+}
+footer form button {
+    cursor: pointer;
 }
 #links {
     color: rgb(0, 153, 255) ;
