@@ -5,7 +5,7 @@ p {
   line-height: 1.5; }
 
 .row {
-  margin: 0; }
+  margin: 0 0 25px 0; }
 
 header h1 {
   margin: 0; }
@@ -40,22 +40,6 @@ span a {
 h4, h5 {
   font-weight: bolder;
   color: gray; }
-
-hr {
-  color: rgba(128, 128, 128, 0.4);
-  padding: 5px; }
-
-ul {
-  list-style-type: disclosure-closed;
-  color: orange; }
-
-li {
-  border-bottom: 1px dotted black; }
-  li a {
-    color: black;
-    font-weight: lighter;
-    color: gray;
-    padding: 10px 0; }
 
 .img_center {
   margin: 30px auto; }
@@ -93,3 +77,28 @@ li {
     padding-top: 30px; }
   .medium_section div {
     margin: 10px 0; }
+
+.section_bottom hr {
+  color: rgba(128, 128, 128, 0.4);
+  margin: 15px 0; }
+
+.section_bottom img {
+  margin: 0 30px 10px 0; }
+
+.section_bottom ul {
+  color: orange;
+  list-style: disclosure-closed inside;
+  padding-left: 10px; }
+  .section_bottom ul li {
+    border-bottom: 1px dotted black;
+    margin: 5px 0;
+    padding: 5px 0; }
+    .section_bottom ul li a {
+      color: black;
+      font-weight: lighter;
+      color: gray;
+      padding: 10px 0; }
+
+footer p {
+  padding: 10px;
+  margin: 5px; }
