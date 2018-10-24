@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Very very very basic Chess game</title>
+    <link rel="stylesheet" href="css/chess.css">
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            let data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+    <div class="float_left">
+        <h1>Whites space</h1>
+    </div>
+    <div class="float_right">
+        <h1>Blacks space</h1>
+    </div>
+    <div><p>
+        Instruction: Everything is manual. Do not drop figures on each other (they will disappear).<br>
+        The figures You cut down, manually add in Your White/Black spaces.
+        </p></div>
+    <div class="clear"></div>
+    <div class="chessboard2">
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="chessboard3">
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <!--veryVeryVeryBasicChess board start-->
+       <div class="chessboard">
+        <!-- 1st -->
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/br.png" id="black_rook_left" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bn.png" id="black_knight_left" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bb.png" id="black_bishop_left" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bk.png" id="black_king" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bq.png" id="black_queen" draggable="true" ondragstart="drag(event)">
+            </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bb.png" id="black_bishop_right" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bn.png" id="black_knight_right" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/br.png" id="black_rook_right" draggable="true" ondragstart="drag(event)">
+        </div>
+        <!-- 2nd -->
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bp.png" id="black_pawn_1" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bp.png" id="black_pawn_2" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bp.png" id="black_pawn_3" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bp.png" id="black_pawn_4" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bp.png" id="black_pawn_5" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bp.png" id="black_pawn_6" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bp.png" id="black_pawn_7" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/bp.png" id="black_pawn_8" draggable="true" ondragstart="drag(event)">
+        </div>
+        <!-- 3th -->
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <!-- 4st -->
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <!-- 5th -->
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <!-- 6th -->
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <!-- 7th -->
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wp.png" id="white_pawn_1" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wp.png" id="white_pawn_2" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wp.png" id="white_pawn_3" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wp.png" id="white_pawn_4" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wp.png" id="white_pawn_5" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wp.png" id="white_pawn_6" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wp.png" id="white_pawn_7" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wp.png" id="white_pawn_8" draggable="true" ondragstart="drag(event)">
+        </div>
+        <!-- 8th -->
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wr.png" id="white_rook_left" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wn.png" id="white_knight_left" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wb.png" id="white_bishop_left" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wk.png" id="white_king" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wq.png" id="white_queen" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wb.png" id="white_bishop_right" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="black target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wn.png" id="white_knight_right" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="white target" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/wr.png" id="white_rook_right" draggable="true" ondragstart="drag(event)">
+        </div>
+    </div>
+    <!--veryVeryVeryBasicChess board end-->
+</body>
+</html>
