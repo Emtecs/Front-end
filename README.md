@@ -1,2 +1,2 @@
 # Front-end
-Studijos
+Studijos / Front - end courses
