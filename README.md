@@ -1,3 +1,3 @@
 # Front-end
-Studijos 
-Front - end courses
+Front-end courses at Baltic-Talents Academy <br>
+Small works
